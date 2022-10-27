@@ -161,7 +161,7 @@ class PostCreateSerializer(serializers.ModelSerializer):
             'material',
             'image',
             'content',
-            'user',
+            'user'
         ]
 class PostSerializer(serializers.ModelSerializer):
     user = serializers.ReadOnlyField(source="user.username")
@@ -177,7 +177,7 @@ class PostSerializer(serializers.ModelSerializer):
             'material',
             'content',
             'update_dt',
-            'user',
+            'user'
         ]
 
 class PostBookmarkSerializer(serializers.ModelSerializer):
